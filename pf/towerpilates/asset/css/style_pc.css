@@ -1,0 +1,137 @@
+/***** header *****/
+/* horizon_header */
+/* vertical_header */
+/* gnb */
+.wrap_box .list_gnb {
+  padding-right: 80px;
+  width: 220px;
+}
+/***** main *****/
+/* intro_area */
+.intro_area {
+  max-width: 100%;
+  height: 600px;
+}
+
+.intro_area .title_main {
+  font-size: 64px;
+}
+
+.wrap_list {
+  position: relative;
+  width: 40%;
+  height: 200vh;
+  overflow: hidden;
+  background-color: #87a8a4;
+  animation: movetop 60s;
+  z-index: -1;
+}
+
+@keyframes movetop {
+  from {
+    top: 0;
+  }
+  to {
+    top: -800px;
+  }
+}
+.intro_area .list_branch {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  color: #fff;
+}
+
+.intro_area .introMain_section {
+  padding: 60px;
+}
+.intro_area .branch_item {
+  width: 50%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.txt_branch {
+  position: relative;
+  top: 25%;
+}
+.branch_item p {
+  margin: 0;
+}
+/* program_area */
+
+.program_area {
+  padding: 80px 6%;
+
+  margin: 0 auto;
+  z-index: 11;
+  background-color: #fff;
+}
+.title_program {
+  font-size: 60px;
+}
+p.desc {
+  width: 400px;
+}
+.program_area .list_program {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+}
+
+.program_area .program_item:nth-child(even) {
+  position: relative;
+  top: -92px;
+}
+.thumb_box {
+  height: 270px;
+}
+.program_item {
+  height: fit-content;
+}
+.program_item .thumb_box .img_program {
+  height: 270px;
+  width: 100%;
+}
+.program_item .boxWarp {
+  padding: 40px;
+}
+.program_item .info_box {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.program_item .list_tag .tag_item {
+  padding: 12px 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+/* review_area */
+.list_review {
+  margin-bottom: 0;
+}
+.title_review {
+  font-size: 54px;
+  padding: 30px 40px;
+}
+.review_item {
+  width: 400px;
+  padding: 44px 50px;
+}
+.branchName {
+  font-size: 40px;
+}
+/* banner_area */
+
+.banner_box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+.btn_contact:hover {
+  background-color: #f7f6e7;
+  color: #87a8a4;
+}
+/***** footer *****/

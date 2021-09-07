@@ -1,0 +1,30 @@
+@charset 'utf-8'
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mobile-app-filter-menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0;
+  height: 2.8125rem;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+}
+
+.mobile-app-filter-menu li a {
+  color: #cacaca;
+}
+
+.mobile-app-filter-menu li.is-active a {
+  color: #8a8a8a;
+}
