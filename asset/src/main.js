@@ -66,3 +66,37 @@
     function numberWithCommas(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
+
+  //changeDescriptionEvent
+    $('.ht').on({
+      'mouseenter': function(){
+        $('.htTxt').addClass('activeDesc');
+      },
+      'mouseleave': function(){
+        $('.descTxt').children().removeClass('activeDesc');
+      },
+    });
+    $('.js').on({
+      'mouseenter': function(){
+        $('.jsTxt').addClass('activeDesc');
+      },
+      'mouseleave': function(){
+        $('.descTxt').children().removeClass('activeDesc');
+      },
+    });
+    $('.ph').on({
+      'mouseenter': function(){
+        $('.phTxt').addClass('activeDesc');
+      },
+      'mouseleave': function(){
+        $('.descTxt').children().removeClass('activeDesc');
+      },
+    });
+    $('.git').on({
+      'mouseenter': function(){
+        $('.gitTxt').addClass('activeDesc');
+      },
+      'mouseleave': function(){
+        $('.descTxt').children().removeClass('activeDesc');
+      },
+    });
