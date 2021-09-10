@@ -119,4 +119,4 @@
     loop: false, // 반복
     pauseFor:30000
   });
-  
+  // 

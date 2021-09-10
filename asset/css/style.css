@@ -10,7 +10,7 @@
 
 .wrap {
   background: linear-gradient(#f3826f, #2d3561);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   color: #fff;
   font-family: "Noto Sans KR", "NeoDunggeunmo", sans-serif;
@@ -114,13 +114,13 @@ h4 {
   margin: 10% auto;
 }
 .leftSection {
-  width: 50%;
+  width: 50vw;
   height: 95vh;
   background-color: rgba(0, 0, 0, 0.6);
   border-right: 2px solid #fff;
 }
 .rightSection {
-  width: 50%;
+  width: 50vw;
   height: 95vh;
 }
 
@@ -129,8 +129,18 @@ h4 {
 .statusPage {
   display: none;
   background: url(../img/bg.png);
+  animation: movingBg 60s infinite linear;
+  width: 99.9vw;
 }
 
+@keyframes movingBg {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 1000000%;
+  }
+}
 .nameTag {
   display: flex;
   text-align: left;
@@ -255,7 +265,7 @@ h4 {
 .projectInfo {
   padding: 36px 0 36px 28px;
   border-top: 4px solid #fff;
-  font-size: 28px;
+  font-size: 24px;
 }
 .projectInfo h4 {
   width: 10%;
@@ -410,10 +420,10 @@ h4 {
 .descTxt {
   margin-left: 28px;
   list-style: disc;
+  font-size: 24px;
 }
 
 .box li {
-  font-size: 26px;
   margin: 28px;
   display: none;
 }
@@ -486,7 +496,6 @@ h4 {
 }
 .activePage {
   display: flex;
-  width: 100%;
 }
 .projectItem {
   display: none;
