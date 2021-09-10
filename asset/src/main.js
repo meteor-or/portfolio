@@ -111,4 +111,12 @@
       },
     });
 
-  //
+  //타이핑
+  
+  const instance = new Typewriter('.taniScript', {
+    strings: ['* 둘 다 자고 있다.'],// 출력 단어
+    autoStart: true,// 자동 시작
+    loop: false, // 반복
+    pauseFor:30000
+  });
+  
