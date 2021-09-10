@@ -129,15 +129,6 @@ h4 {
 .statusPage {
   display: none;
   background: url(../img/bg.png);
-  animation: movingBg 180s infinite linear;
-}
-@keyframes movingBg {
-  from {
-    background-position: 10000%;
-  }
-  to {
-    background-position: -10000%;
-  }
 }
 
 .nameTag {
@@ -245,8 +236,9 @@ h4 {
 
 /**** projectPage ****/
 
-.projectPage .container {
-  margin: 5% auto;
+.projectPage .leftSection {
+  overflow: scroll;
+  height: 90vh;
 }
 .projectPage {
   display: none;
@@ -434,12 +426,12 @@ h4 {
 .contactPage {
   font-family: "NeoDunggeunmo";
 }
-.leftSection {
+.contactPage .leftSection {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.leftSection .contactBox {
+.contactPage .leftSection .contactBox {
   border: 3px solid #fff;
   width: fit-content;
   padding: 10px 20px;
