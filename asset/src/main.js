@@ -27,6 +27,7 @@
         $('.contactPage').addClass('activePage')
       });
 
+      
       //project sub menu 호출
       $('.gnb li').eq(1).click(function(){
         $('.projectNav').addClass('activeFlex');
@@ -38,10 +39,18 @@
         $(this).siblings().removeClass('is-active');
         $(this).addClass('is-active');
       });
+      //
+      $('.projectNav .item01').click(function () {
+        $('.project01').siblings().removeClass('activeProject');
+        $('.project01').addClass('activeProject');
+      });
+      $('.projectNav .item02').click(function () {
+        $('.project02').siblings().removeClass('activeProject');
+        $('.project02').addClass('activeProject');
+      });
 
-      //walking tani
-      $('.statusPage img[alt="tani"]').animate({marginLeft:-200},3000)
-      
+      //statusPage 
+
       //changeTitle 
       $('.titleItem').click(function () {
         $(this).siblings().removeClass('equippedTitle');
@@ -55,11 +64,11 @@
         duration:294000,
         easing:'linear',
         step: function() {
-          var num = numberWithCommas(Math.floor(this.val));
+          let num = numberWithCommas(Math.floor(this.val));
           $(".levelNum").text(num);
         },
         complete: function() {
-          var num = numberWithCommas(Math.floor(this.val));
+          let num = numberWithCommas(Math.floor(this.val));
           $(".levelNum").text(num);
         }
       });
@@ -68,6 +77,7 @@
   }
 
   //changeDescriptionEvent
+  
     $('.ht').on({
       'mouseenter': function(){
         $('.htTxt').addClass('activeDesc');
@@ -100,3 +110,5 @@
         $('.descTxt').children().removeClass('activeDesc');
       },
     });
+
+  //
