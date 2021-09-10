@@ -126,7 +126,17 @@ h4 {
 .statusPage {
   display: none;
   background: url(../img/bg.png);
+  animation: movingBg 180s infinite linear;
 }
+@keyframes movingBg {
+  from {
+    background-position: 10000%;
+  }
+  to {
+    background-position: -10000%;
+  }
+}
+
 .nameTag {
   display: flex;
   text-align: left;
@@ -206,24 +216,28 @@ h4 {
   background-position: left 50%;
   background-size: 20px;
 }
-.rightSection .me {
+.statusPage .rightSection {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rightSection .me {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .rightSection img[alt="meRight"] {
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(50%) translateX(25%);
-  right: 25%;
 }
 .rightSection .nameBox {
-  position: relative;
+  position: absolute;
+  bottom: -30px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
 }
 .rightSection img[alt="taniWalking"] {
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(50%) translateX(30%);
-  right: 30%;
-  width: 5%;
 }
 
 /**** projectPage ****/
