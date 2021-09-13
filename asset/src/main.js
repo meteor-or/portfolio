@@ -63,9 +63,11 @@
       $('.titleItem').click(function () {
         $(this).siblings().removeClass('equippedTitle');
         $(this).addClass('equippedTitle');
-        let txta = $(this).children('.nameTitle').text();
-        console.log(txta);
-        $('.activeTitle').text(txta);
+        let title = $(this).children('.nameTitle').text();
+        console.log(title);
+        $('.activeTitle').text(title);
+        $('.titleBox').text(title);
+        
       });
       //levelUpAnimation
       $({ val : 1 }).animate({ val : 99 }, {
