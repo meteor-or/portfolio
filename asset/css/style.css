@@ -128,19 +128,10 @@ h4 {
 
 .statusPage {
   display: none;
-  background: url(../img/bg.png);
-  animation: movingBg 60s infinite linear;
-  width: 99.9vw;
+  background: url(../img/bg22.gif);
+  width: 100vw;
 }
 
-@keyframes movingBg {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 1000000%;
-  }
-}
 .nameTag {
   display: flex;
   text-align: left;
@@ -247,8 +238,14 @@ h4 {
 /**** projectPage ****/
 
 .projectPage .leftSection {
-  overflow: scroll;
+  overflow-y: scroll;
   height: 90vh;
+}
+.projectPage .leftSection::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.projectPage .leftSection::-webkit-scrollbar-track {
+  background-color: yellow;
 }
 .projectPage {
   display: none;
@@ -273,10 +270,10 @@ h4 {
 .projectInfo .desc {
   width: 60%;
 }
-.process ul {
+.infoItem ul {
   margin: 0;
 }
-.process li {
+.desc li {
   background-size: 20px;
   margin-bottom: 28px;
 }
@@ -320,7 +317,20 @@ h4 {
   border-left: 7px solid #e3e3e3;
   border-right: 7px solid #6d6e70;
   border-bottom: 7px solid #6d6e70;
+  animation: fadeUp forwards 0.5s;
 }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .frameHeader {
   background-color: #2d3561;
   display: flex;
@@ -372,10 +382,15 @@ h4 {
 
 .frameMain {
   background-color: #000;
+  background-size: cover;
+  overflow-y: scroll;
   width: 98%;
   height: 90%;
   margin: 10px auto;
   border: 7px solid #6d6e70;
+}
+.frameMain img[alt="towerpilates"] {
+  width: 100%;
 }
 /* skills */
 
@@ -408,8 +423,8 @@ h4 {
 .skillsPage .rightSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-top: 200px;
 }
 
 .box {
@@ -435,6 +450,7 @@ h4 {
 
 .contactPage {
   font-family: "NeoDunggeunmo";
+  display: none;
 }
 .contactPage .leftSection {
   display: flex;
@@ -460,7 +476,7 @@ h4 {
 }
 .contactPage .myroom {
   height: 100%;
-  background: url(../img/myroomNight.png) 50% 20% / 600px no-repeat;
+  background: url(../img/myroomNight.png) 50% 0 / 600px no-repeat;
   position: relative;
 }
 .contactPage img[alt="tani"] {
@@ -492,7 +508,7 @@ h4 {
   line-height: 200px;
 }
 .contactPage img[alt="script"] {
-  width: 500%;
+  width: 300%;
 }
 .activePage {
   display: flex;

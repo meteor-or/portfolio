@@ -1,5 +1,4 @@
 
-
       // nav
       //gnb색상변경
       $('[data-mobile-app-filter-menu] li').click(function () {
@@ -38,6 +37,15 @@
       $('.projectNav li').click(function () {
         $(this).siblings().removeClass('is-active');
         $(this).addClass('is-active');
+      });
+      //오른쪽 프레임 명 변경
+      $('.projectNav li').click(function () {
+        let frameName = $(this).text();
+        console.log(frameName);
+        $('.frameHeader h4').text(frameName);
+      });
+      // 프레임 에니메이션
+      $('.projectNav li').click(function () {
       });
       //
       $('.projectNav .item01').click(function () {
@@ -79,35 +87,27 @@
   //changeDescriptionEvent
   
     $('.ht').on({
-      'mouseenter': function(){
-        $('.htTxt').addClass('activeDesc');
-      },
-      'mouseleave': function(){
+      'click': function(){
         $('.descTxt').children().removeClass('activeDesc');
+        $('.htTxt').addClass('activeDesc');
       },
     });
     $('.js').on({
-      'mouseenter': function(){
-        $('.jsTxt').addClass('activeDesc');
-      },
-      'mouseleave': function(){
+      'click': function(){
         $('.descTxt').children().removeClass('activeDesc');
+        $('.jsTxt').addClass('activeDesc');
       },
     });
     $('.ph').on({
-      'mouseenter': function(){
-        $('.phTxt').addClass('activeDesc');
-      },
-      'mouseleave': function(){
+      'click': function(){
         $('.descTxt').children().removeClass('activeDesc');
+        $('.phTxt').addClass('activeDesc');
       },
     });
     $('.git').on({
-      'mouseenter': function(){
-        $('.gitTxt').addClass('activeDesc');
-      },
-      'mouseleave': function(){
+      'click': function(){
         $('.descTxt').children().removeClass('activeDesc');
+        $('.gitTxt').addClass('activeDesc');
       },
     });
 
