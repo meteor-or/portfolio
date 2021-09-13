@@ -5,6 +5,13 @@
     format("woff");
   font-weight: normal;
   font-style: normal;
+  unicode-range: U+AC00- U+D7A3;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
 
@@ -13,7 +20,7 @@
   width: 100vw;
   height: 100vh;
   color: #fff;
-  font-family: "Noto Sans KR", "NeoDunggeunmo", sans-serif;
+  font-family: "roboto", "Noto Sans KR", "NeoDunggeunmo", sans-serif;
   overflow: hidden;
 }
 ul {
@@ -218,6 +225,7 @@ h4 {
   align-items: center;
 }
 .rightSection .me {
+  font-family: "NeoDunggeunmo";
   position: relative;
   display: flex;
   justify-content: center;
@@ -225,13 +233,14 @@ h4 {
   align-items: center;
 }
 .rightSection .titleBox {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 0.5px dashed #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  color: #fff;
   padding: 0 10px;
 }
 .rightSection .nameBox {
   position: absolute;
-  bottom: -30px;
+  bottom: -35px;
   margin-top: 20px;
   font-size: 1.2rem;
   background-color: rgba(0, 0, 0, 0.5);
@@ -247,53 +256,69 @@ h4 {
   overflow-y: scroll;
   height: 90vh;
 }
-.projectPage .leftSection::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.projectPage .leftSection::-webkit-scrollbar-track {
-  background-color: yellow;
-}
 .projectPage {
   display: none;
 }
-.projectPage .rightSection {
+.projectPage .container {
+  width: 80%;
+  margin: 0 auto;
 }
 .projectPage h3 {
   font-size: 36px;
   margin-bottom: 0;
 }
-.projectPage h2 {
-  margin-bottom: 28px;
+.projectPage .headingContainer {
+  padding: 28px 0;
+  text-indent: 28px;
+  color: #2c2c2c;
+  background-color: #d5d5d5;
+  letter-spacing: 0.05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 .projectInfo {
-  padding: 36px 0 36px 28px;
-  border-top: 4px solid #fff;
+  padding: 72px 0 72px 10px;
+  border-top: 4px solid #d5d5d5;
   font-size: 24px;
 }
-.projectInfo h4 {
-  width: 10%;
+.hashtag {
+  font-size: 1.5rem;
+  text-shadow: none;
 }
 .projectInfo .desc {
-  width: 60%;
 }
 .infoItem ul {
   margin: 0;
 }
 .desc li {
-  background-size: 20px;
+  background-size: 18px;
   margin-bottom: 28px;
+  margin-left: 28px;
 }
 .leftSection .projectInfo .infoItem {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 72px;
+  flex-direction: column;
 }
-
+.contribution .desc {
+  text-indent: 28px;
+}
 .projectInfo .infoItem h4 {
   font-family: "Noto Sans KR", sans-serif;
-  width: 25%;
+  width: 20%;
+  padding: 5px 10px;
   font-size: 28px;
+  color: #fff;
+  border-left: 3px solid #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 36px;
 }
-
+.projectInfo strong {
+  color: #ffb961;
+  border-bottom: 2px solid #ffb961;
+  padding: 5px 10px;
+}
 .moreinfo {
   width: 100%;
   display: flex;
@@ -524,4 +549,5 @@ h4 {
 }
 .activeProject {
   display: block;
+  margin: 10px;
 }
