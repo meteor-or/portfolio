@@ -135,7 +135,7 @@ h4 {
 
 .statusPage {
   display: none;
-  background: url(../img/bg22.gif);
+  background: url(https://s3.us-west-2.amazonaws.com/secure.notion-static.com/80d896a8-768b-462c-925f-4fc88f3f2fa0/bg22.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210913%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210913T164911Z&X-Amz-Expires=86400&X-Amz-Signature=0a601115f9487e2da9a6c6a6de953f8863f45f713446283ec2df58bf2f92af90&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22bg22.gif%22);
   width: 100vw;
 }
 
@@ -271,6 +271,8 @@ h4 {
 .projectPage .container {
   width: 90%;
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.3);
+  border: thick double #fff;
 }
 .projectPage h3 {
   font-size: 36px;
@@ -279,14 +281,16 @@ h4 {
 .projectPage .headingContainer {
   padding: 28px 0;
   text-indent: 28px;
-  color: #2c2c2c;
-  background-color: #d5d5d5;
+  color: #fff;
   letter-spacing: 0.05em;
-  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px dashed #fff;
+}
+.nameProject {
+  color: #3dd39e;
+  text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 .projectInfo {
   padding: 72px 0 72px 10px;
-  border-top: 4px solid #d5d5d5;
   font-size: 24px;
 }
 .hashtag {
@@ -329,7 +333,8 @@ h4 {
   margin-bottom: 36px;
 }
 .projectInfo .infoItem strong {
-  color: #ffb961;
+  color: #3dd39e;
+  /* text-shadow: 4px 4px 0px #8634ff, 7px 7px 0px rgba(0, 0, 0, 0.2); */
   padding: 5px 10px;
   margin-top: 28px;
   font-size: 1.8rem;
