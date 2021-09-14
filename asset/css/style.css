@@ -281,13 +281,12 @@ h4 {
 .projectPage .headingContainer {
   padding: 28px 0;
   text-indent: 28px;
-  color: #fff;
+  color: #3dd39e;
+  text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.05em;
   border-bottom: 2px dashed #fff;
 }
 .nameProject {
-  color: #3dd39e;
-  text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 .projectInfo {
   padding: 72px 0 72px 10px;
@@ -295,7 +294,6 @@ h4 {
 }
 .hashtag {
   font-size: 1.5rem;
-  text-shadow: none;
 }
 .projectInfo .desc {
   font-size: 1.3rem;
@@ -338,6 +336,7 @@ h4 {
   padding: 5px 10px;
   margin-top: 28px;
   font-size: 1.8rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .moreinfo {
   width: 100%;
