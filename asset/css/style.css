@@ -302,12 +302,12 @@ h4 {
   margin: 0;
 }
 .desc li {
-  background-size: 18px;
+  background-size: 24px;
   margin-bottom: 10px;
   margin-left: 28px;
 }
 .infoItem .desc li:nth-child(3) {
-  margin-bottom: 48px;
+  margin-bottom: 60px;
 }
 .projectInfo .infoItem {
   display: flex;
@@ -328,7 +328,7 @@ h4 {
   font-weight: bold;
   text-align: left;
   padding-left: 20px;
-  margin-bottom: 36px;
+  margin-bottom: 72px;
 }
 .projectInfo .infoItem strong {
   color: #3dd39e;
