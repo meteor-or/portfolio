@@ -33,6 +33,9 @@ h3,
 h4 {
   font-family: "NeoDunggeunmo";
 }
+a {
+  display: block;
+}
 /* nav */
 .gnb {
   font-family: "NeoDunggeunmo", sans-serif;
@@ -135,7 +138,7 @@ h4 {
 
 .statusPage {
   display: none;
-  background: url(https://s3.us-west-2.amazonaws.com/secure.notion-static.com/80d896a8-768b-462c-925f-4fc88f3f2fa0/bg22.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210913%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210913T164911Z&X-Amz-Expires=86400&X-Amz-Signature=0a601115f9487e2da9a6c6a6de953f8863f45f713446283ec2df58bf2f92af90&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22bg22.gif%22);
+  background: url(../img/bg22.gif);
   width: 100vw;
 }
 
@@ -279,21 +282,26 @@ h4 {
   margin-bottom: 0;
 }
 .projectPage .headingContainer {
-  padding: 28px 0;
   text-indent: 28px;
-  color: #3dd39e;
-  text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.05em;
-  border-bottom: 2px dashed #fff;
 }
-.nameProject {
+.mainTitle {
+  color: #03c4a1;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.3);
+}
+.subTitle {
+  color: #03c4a1;
 }
 .projectInfo {
-  padding: 72px 0 72px 10px;
   font-size: 24px;
 }
 .hashtag {
   font-size: 1.5rem;
+  background-color: #03c4a1;
+  font-weight: bold;
+  word-wrap: break-word;
+  padding: 28px 0;
 }
 .projectInfo .desc {
   font-size: 1.3rem;
@@ -301,12 +309,16 @@ h4 {
 .infoItem ul {
   margin: 0;
 }
-.desc li {
-  background-size: 24px;
+.descOfReview,
+.descOfProcess,
+.descOfContribution {
   margin-bottom: 10px;
   margin-left: 28px;
 }
-.infoItem .desc li:nth-child(3) {
+:is(.descOfReview, .descOfProcess) li {
+  margin-bottom: 10px;
+}
+:is(.descOfReview, .descOfProcess) li:nth-child(3) {
   margin-bottom: 60px;
 }
 .projectInfo .infoItem {
@@ -318,20 +330,20 @@ h4 {
 .contribution .desc {
   text-indent: 28px;
 }
-.projectInfo .infoItem h4 {
+.projectInfo .infoItem .headingOfProject {
   font-family: "Noto Sans KR", sans-serif;
-  width: 20%;
   padding: 5px 10px;
   font-size: 28px;
   color: #fff;
-  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
   font-weight: bold;
   text-align: left;
-  padding-left: 20px;
+  text-indent: 28px;
   margin-bottom: 72px;
 }
 .projectInfo .infoItem strong {
-  color: #3dd39e;
+  color: #03c4a1;
   /* text-shadow: 4px 4px 0px #8634ff, 7px 7px 0px rgba(0, 0, 0, 0.2); */
   padding: 5px 10px;
   margin-top: 28px;
@@ -342,7 +354,6 @@ h4 {
   width: 100%;
   display: flex;
   border-top: 2px solid #fff;
-  border-bottom: 4px solid #fff;
   font-family: "NeoDunggeunmo", sans-serif;
 }
 .moreinfo a {
@@ -353,7 +364,11 @@ h4 {
   font-size: 1.8rem;
   color: #fff;
 }
-.moreinfo .pilatesLink {
+.moreinfo a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.moreinfo .siteLink {
   border-right: 2px solid #fff;
 }
 /* windowsFrame */
@@ -368,6 +383,10 @@ h4 {
   border-right: 7px solid #6d6e70;
   border-bottom: 7px solid #6d6e70;
   animation: fadeUp forwards 0.5s;
+}
+.contentInnerFrame {
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fadeUp {
@@ -568,7 +587,7 @@ h4 {
 }
 .activeProject {
   display: block;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 /* contactButton */
