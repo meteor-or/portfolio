@@ -250,6 +250,9 @@ a {
   overflow-y: scroll;
   height: 90vh;
 }
+.projectPage .leftSection.displayNone {
+  display: none;
+}
 .projectPage .leftSection::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0);
   width: 10px;
@@ -347,10 +350,6 @@ a {
 .process strong::before {
   content: "";
 }
-.process 
-/* .projectInfo .infoItem li::before {
-  content: "* ";
-} */
 .moreinfo {
   width: 100%;
   display: flex;
@@ -376,14 +375,22 @@ a {
 
 .rightSection .frame {
   width: 90%;
-  margin: 50px auto;
   height: 80vh;
+
+  margin: 50px auto;
   background-color: #c2c2c3;
   border-top: 7px solid #e3e3e3;
   border-left: 7px solid #e3e3e3;
   border-right: 7px solid #6d6e70;
   border-bottom: 7px solid #6d6e70;
   animation: fadeUp forwards 0.5s;
+}
+.rightSection .frame.fullmode {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  margin: 0;
 }
 .contentInnerFrame {
   width: 100%;
@@ -422,6 +429,9 @@ a {
 .minimization .line1 {
   bottom: 0;
 }
+.windowedMode {
+  cursor: pointer;
+}
 .windowedMode .box {
   display: block;
   position: absolute;
@@ -430,6 +440,7 @@ a {
   border: 2px solid #000;
   border-top: 4px solid #000;
 }
+
 .close .line2 {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);

@@ -61,6 +61,13 @@
         $(".process").css("display","none")
       });
 
+
+//프레임 창모드 전체화면
+
+$(".windowedMode").on("click",function(){
+  $(".frame").toggleClass("fullmode");
+  $(".projectPage .leftSection").toggleClass("displayNone");
+});
 // 돌아가는 텍스트"
 
 $.each($(".ezkorry-roller"), function(index, item) {
