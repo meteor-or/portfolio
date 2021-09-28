@@ -36,6 +36,10 @@ h4 {
 a {
   display: block;
 }
+.ezkorry-roller {
+  overflow: hidden;
+  white-space: nowrap;
+}
 /* nav */
 .gnb {
   font-family: "NeoDunggeunmo", sans-serif;
@@ -53,15 +57,10 @@ a {
   align-items: center;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
 }
 .projectNav {
-  font-family: "NeoDunggeunmo", sans-serif;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .gnb li {
   border-right: 1px solid #fff;
@@ -96,7 +95,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 2px solid #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
   display: none;
 }
@@ -126,7 +125,7 @@ a {
 .leftSection {
   width: 50vw;
   height: 95vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border-right: 2px solid #fff;
 }
 .rightSection {
@@ -173,14 +172,6 @@ a {
   height: 20px;
   background-color: #fff;
   animation: expLevelup 3s infinite;
-}
-@keyframes expLevelup {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
 }
 .exp .expTxt {
   display: flex;
@@ -294,14 +285,14 @@ a {
   color: #03c4a1;
 }
 .projectInfo {
-  font-size: 24px;
+  font-size: 22px;
 }
 .hashtag {
-  font-size: 1.5rem;
   background-color: #03c4a1;
   font-weight: bold;
-  word-wrap: break-word;
   padding: 28px 0;
+  font-size: 48px;
+  width: 100%;
 }
 .projectInfo .desc {
   font-size: 1.3rem;
@@ -310,21 +301,20 @@ a {
   margin: 0;
 }
 .descOfReview,
-.descOfProcess,
-.descOfContribution {
-  margin-bottom: 10px;
+.descOfDetail,
+.descOfProcess {
+  margin-bottom: 72px;
   margin-left: 28px;
 }
-:is(.descOfReview, .descOfProcess) li {
+.descOfContribution {
+  margin: 72px 28px;
+}
+:is(.descOfReview, .descOfDetail, .descOfProcess) li {
   margin-bottom: 10px;
 }
-:is(.descOfReview, .descOfProcess) li:nth-child(3) {
-  margin-bottom: 60px;
-}
-.projectInfo .infoItem {
+.infoItem {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 72px;
   flex-direction: column;
 }
 .contribution .desc {
@@ -333,23 +323,34 @@ a {
 .projectInfo .infoItem .headingOfProject {
   font-family: "Noto Sans KR", sans-serif;
   padding: 5px 10px;
-  font-size: 28px;
+  font-size: 36px;
   color: #fff;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
   font-weight: bold;
   text-align: left;
   text-indent: 28px;
-  margin-bottom: 72px;
 }
-.projectInfo .infoItem strong {
+.infoItem strong {
+  display: block;
   color: #03c4a1;
-  /* text-shadow: 4px 4px 0px #8634ff, 7px 7px 0px rgba(0, 0, 0, 0.2); */
+  /* text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2); */
   padding: 5px 10px;
-  margin-top: 28px;
+  margin-top: 72px;
   font-size: 1.8rem;
   background-color: rgba(0, 0, 0, 0.3);
+  width: fit-content;
 }
+.infoItem strong::before {
+  content: "#";
+}
+.process strong::before {
+  content: "";
+}
+.process 
+/* .projectInfo .infoItem li::before {
+  content: "* ";
+} */
 .moreinfo {
   width: 100%;
   display: flex;
@@ -387,17 +388,6 @@ a {
 .contentInnerFrame {
   width: 100%;
   height: 100%;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(60%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .frameHeader {
@@ -582,12 +572,8 @@ a {
 .activePage {
   display: flex;
 }
-.projectItem {
-  display: none;
-}
 .activeProject {
   display: block;
-  /* margin: 10px; */
 }
 
 /* contactButton */
@@ -910,4 +896,26 @@ a {
   transition: opacity 0.3s ease-out, background-color 0.1125s ease-in;
   opacity: 1;
   z-index: -1;
+}
+
+/* keyfrmae */
+
+@keyframes expLevelup {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
