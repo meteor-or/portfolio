@@ -137,7 +137,8 @@ a {
 
 .statusPage {
   display: none;
-  background: url(../img/bg22.gif);
+  background-image: url(../img/bg.gif);
+  background-size: cover;
   width: 100vw;
 }
 
