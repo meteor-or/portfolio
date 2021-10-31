@@ -51,23 +51,8 @@ $(".projectNav li").click(function () {
   let frameName = $(this).text();
   $(".frameHeader h4").text(frameName);
 });
-// // activeProjectNav
 
-$(".projectNav .item01").click(function () {
-  $(".process").addClass("activeProject");
-  $(".githubLink").text("과정보기(노션)");
-  $(".process").css("display", "block");
-});
-$(".projectNav .item02").click(function () {
-  $(".process").removeClass("activeProject");
-  $(".githubLink").text("코드보기");
-  $(".process").css("display", "none");
-});
-$(".projectNav .item03").click(function () {
-  $(".process").removeClass("activeProject");
-  $(".githubLink").text("코드보기");
-  $(".process").css("display", "none");
-});
+// // activeProjectNav
 
 //프레임 창모드 전체화면
 
@@ -75,7 +60,9 @@ $(".windowedMode").on("click", function () {
   $(".frame").toggleClass("fullmode");
   $(".projectPage .leftSection").toggleClass("displayNone");
 });
-
+$(".mobileBtn").on("click", function () {
+  $(".frame").toggleClass("moblie__mode");
+});
 // 돌아가는 텍스트"
 $.each($(".ezkorry-roller"), function (index, item) {
   const wrapper = $("<div />", { class: "ezkorry-roller-wrapper" });
@@ -125,8 +112,12 @@ $.ajax({
     for (let j = 0; j <= descOfReview.length - 1; j++) {
       $(".descOfReview ul").append("<li>" + descOfReview[j] + "</li>");
     }
-    for (let j = 0; j <= descOfProcess.length - 1; j++) {
-      $(".descOfProcess ul").append("<li>" + descOfProcess[j] + "</li>");
+    if (descOfProcess !== "") {
+      for (let j = 0; j <= descOfProcess.length - 1; j++) {
+        $(".descOfProcess ul").append("<li>" + descOfProcess[j] + "</li>");
+      }
+    } else {
+      $(".process").css("display", "none");
     }
     $(".siteLink").attr({ href: siteUrl });
     $(".githubLink").attr({ href: gitUrl });

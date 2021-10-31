@@ -1,5 +1,62 @@
 [
   {
+    "title":"오늘 전장",
+    "hashtag":"#React #Bootstrap #데이터바인딩 #라이브러리",
+    "descOfContribution":"기획 + 디자인 + 구현 100%",
+    "descOfDetail":["<strong>소개</strong>","파이널 판타지 14 게임의 pvp 전장 컨텐츠 일정을 보여주는 달력과 공식 가이드에서 알려주지 않는 규칙을 알려주는 사이트.","<strong>제작 계기</strong>","평소에 "],
+    "descOfProcess":"",
+    "descOfReview":["리액트를 배우면서 만든 사이트"],
+    "siteUrl":"https://dailyfrontline.netlify.app",
+    "gitUrl":"https://github.com/meteor-or/FLCalendar"
+  },
+  {
+    "title" :"레고 시티경찰",
+    "hashtag" : "#웹접근성 #웹표준 #시맨틱마크업 #제이쿼리",
+    "descOfContribution":"디자인 + 퍼블리싱 100%",
+    "descOfDetail":[
+      "<strong>디자인</strong>",
+      "* ‘레고 시티 경찰' 장난감의 특성",
+      "* 딱딱한 폰트, 키치한 색상, 폴리스 라인",
+      "<strong>퍼블리싱</strong>",
+      "* 제이쿼리 사용: 드래그시 색상이 바뀌는 부분 구현",
+      "* 다양한 플러그인으로 애니메이션 구현"],
+    "descOfProcess":"",
+    "descOfReview":[
+      "<strong>디자인</strong>",
+      "* 문제 : 프로모션 상품 페이지에 45도 각도로 붙인 네임택이 구현하기 힘듬",
+      "* 원인 : web전용 사이트라고 하더라도 사용자의 화면 크기가 다름",
+      "* 해결 : 구현하기 쉽도록 아예 디자인 변경",
+      "<strong> 퍼블리싱 오류 해결 과정</strong>",
+      "* 오류 : 하단 프로모션 부분의 Kakao Api를 사용하여 사진을 불러오려고 했으나 되지 않음",
+      "* 원인 : 개인 블로그 복사금지 되어있기 때문",
+      "* 해결 : 쇼핑 사이트의 주소 사용"],
+      "siteUrl":"https://legopfsite.netlify.app",
+      "gitUrl":"https://github.com/meteor-or/legoSite"
+  },
+  {
+    "title" :"타워필라테스",
+    "hashtag" : "#CSSanimation #반응형 #웹접근성 #웹표준 #시맨틱마크업 ",
+    "descOfContribution":"디자인 + 퍼블리싱 100%",
+    "descOfDetail":[
+      "<strong>디자인</strong>",
+      "* ‘독일식 발레핏 필라테스 전문센터' 특징을 고려한 파스텔 컬러",
+      "* 부드러운 이미지라 굵고 투박한 선보단 얇은 선을 사용",
+      "<strong>퍼블리싱</strong>",
+      "* 바닐라 자바스크립트 : 스크롤 이벤트 + gnb 클릭 시 body가 밀리는 부분",
+      "* 나머지 애니메이션은 css로 구현"],
+    "descOfProcess":"",
+    "descOfReview":[
+      "<strong>디자인</strong>",
+      "* 구상 시 display : grid, flex를 사용하여 퍼블리싱 할 것 고려함",
+      "* 실제로 퍼블리싱이 어렵지 않았음<br>",
+      "<strong>퍼블리싱</strong>",
+      "* 작업 당시 자바스크립트 학습중이라 미숙함",
+      "* hamburger Menu 클릭 시 직선 변화 애니메이션 넣고 싶음",
+      "* input:checkbox 태그를 사용하여 순수 CSS animation로 구현"],
+      "siteUrl":"https://towerpilates.netlify.app",
+      "gitUrl":"https://github.com/meteor-or/pilatesSite"
+  }, 
+  {
     "title" :"잔고냉장고",
     "hashtag" : "#UIUX디자인",
     "descOfContribution":"디자인33%",
@@ -43,52 +100,5 @@
       "* 중요한 문제가 아니라면 최대한 양보하여 빠르게 진행하기"],
       "siteUrl":"https://xd.adobe.com/embed/d06051ae-2893-47a5-a743-022cb307a675-8533/",
       "gitUrl":"https://brawny-gum-f58.notion.site/1d0a33255fbb4d95af4e38aaa1dfb076"
-  },
-  {
-    "title" :"타워필라테스",
-    "hashtag" : "#CSSanimation #반응형 #웹접근성 #웹표준 #시맨틱마크업 ",
-    "descOfContribution":"디자인 100% + 퍼블리싱 100%",
-    "descOfDetail":[
-      "<strong>디자인</strong>",
-      "* ‘독일식 발레핏 필라테스 전문센터' 특징을 고려한 파스텔 컬러",
-      "* 부드러운 이미지라 굵고 투박한 선보단 얇은 선을 사용",
-      "<strong>퍼블리싱</strong>",
-      "* 바닐라 자바스크립트 : 스크롤 이벤트 + gnb 클릭 시 body가 밀리는 부분",
-      "* 나머지 애니메이션은 css로 구현"],
-    "descOfProcess":"",
-    "descOfReview":[
-      "<strong>디자인</strong>",
-      "* 구상 시 display : grid, flex를 사용하여 퍼블리싱 할 것 고려함",
-      "* 실제로 퍼블리싱이 어렵지 않았음<br>",
-      "<strong>퍼블리싱</strong>",
-      "* 작업 당시 자바스크립트 학습중이라 미숙함",
-      "* hamburger Menu 클릭 시 직선 변화 애니메이션 넣고 싶음",
-      "* input:checkbox 태그를 사용하여 순수 CSS animation로 구현"],
-      "siteUrl":"https://towerpilates.netlify.app",
-      "gitUrl":"https://github.com/meteor-or/pilatesSite"
-  }, 
-  {
-    "title" :"레고 시티경찰",
-    "hashtag" : "#웹접근성 #웹표준 #시맨틱마크업 #제이쿼리",
-    "descOfContribution":"디자인 100% + 퍼블리싱 100%",
-    "descOfDetail":[
-      "<strong>디자인</strong>",
-      "* ‘레고 시티 경찰' 장난감의 특성",
-      "* 딱딱한 폰트, 키치한 색상, 폴리스 라인",
-      "<strong>퍼블리싱</strong>",
-      "* 제이쿼리 사용: 드래그시 색상이 바뀌는 부분 구현",
-      "* 다양한 플러그인으로 애니메이션 구현"],
-    "descOfProcess":"",
-    "descOfReview":[
-      "<strong>디자인</strong>",
-      "* 문제 : 프로모션 상품 페이지에 45도 각도로 붙인 네임택이 구현하기 힘듬",
-      "* 원인 : web전용 사이트라고 하더라도 사용자의 화면 크기가 다름",
-      "* 해결 : 구현하기 쉽도록 아예 디자인 변경",
-      "<strong> 퍼블리싱</strong>",
-      "* 오류 : Kakao Api를 활용하는 부분에서 블로그 사진만 불러오지 못함 ",
-      "* 원인 : 개인 블로그 복사금지 되어있기 때문",
-      "* 해결 : 쇼핑 사이트의 주소 사용"],
-      "siteUrl":"https://legopfsite.netlify.app",
-      "gitUrl":"https://github.com/meteor-or/legoSite"
   }
 ]
