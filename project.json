@@ -1,27 +1,43 @@
 [
   {
-    "title":"오늘 전장",
-    "hashtag":"#React #Bootstrap #데이터바인딩 #라이브러리",
-    "descOfContribution":"기획 + 디자인 + 구현 100%",
-    "descOfDetail":["<strong>소개</strong>","파이널 판타지 14 게임의 pvp 전장 컨텐츠 일정을 보여주는 달력과 공식 가이드에서 알려주지 않는 규칙을 알려주는 사이트.","<strong>제작 계기</strong>","평소에 "],
-    "descOfProcess":"",
-    "descOfReview":["리액트를 배우면서 만든 사이트"],
-    "siteUrl":"https://dailyfrontline.netlify.app",
-    "gitUrl":"https://github.com/meteor-or/FLCalendar"
+    "title": "오늘 전장",
+    "hashtag": "#React #Bootstrap #SPA #데이터바인딩 #라이브러리",
+    "descOfContribution": "기획 + 디자인 + 구현 100%",
+    "descOfDetail": [
+      "<strong>소개</strong>",
+      "* 파이널 판타지 14 게임의 일정을 보여주는 달력과 공식 가이드에서 알려주지 않는 규칙을 알려주는 사이트.",
+      "<strong>사용한 라이브러리</strong>",
+      "* React-bootstrap, React-slick, React-big-calendar, React-Responsive"
+    ],
+    "descOfProcess": "",
+    "descOfReview": [
+      "<strong> 구현 방법 </strong>",
+      "* useState : 묶은 데이터를 반복문을 통해 바인딩하고 컴포넌트화(표와 카드)",
+      "* useEffect : 간단한 로딩 페이지 구현",
+      "* React-Slick : 모바일에서 사용 가능한 슬라이드",
+      "* React-Bootstrap : 모바일에서 사용 가능한 슬라이드",
+      "<strong> 코딩에서 생긴 오류 해결 과정</strong>",
+      "* 문제 : table 컴포넌트의 tbody의 tr이 한 개일 경우 오류가 생겼다.",
+      "* 원인 : tr이 여러 개일 경우만 생각해서 이중 반복문을 사용했기 때문이다. ",
+      "* 해결 : 삼항 연산자를 사용하여 컴포넌트 안에서 tr이 한 개면 이중 반복문을 사용하지 않도록 했다."
+    ],
+    "siteUrl": "https://dailyfrontline.netlify.app",
+    "gitUrl": "https://github.com/meteor-or/FLCalendar"
   },
   {
-    "title" :"레고 시티경찰",
-    "hashtag" : "#웹접근성 #웹표준 #시맨틱마크업 #제이쿼리",
-    "descOfContribution":"디자인 + 퍼블리싱 100%",
-    "descOfDetail":[
+    "title": "레고 시티경찰",
+    "hashtag": "#웹접근성 #웹표준 #시맨틱마크업 #JQuery",
+    "descOfContribution": "디자인 + 퍼블리싱 100%",
+    "descOfDetail": [
       "<strong>디자인</strong>",
       "* ‘레고 시티 경찰' 장난감의 특성",
       "* 딱딱한 폰트, 키치한 색상, 폴리스 라인",
       "<strong>퍼블리싱</strong>",
       "* 제이쿼리 사용: 드래그시 색상이 바뀌는 부분 구현",
-      "* 다양한 플러그인으로 애니메이션 구현"],
-    "descOfProcess":"",
-    "descOfReview":[
+      "* 플러그인으로 애니메이션 구현"
+    ],
+    "descOfProcess": "",
+    "descOfReview": [
       "<strong>디자인</strong>",
       "* 문제 : 프로모션 상품 페이지에 45도 각도로 붙인 네임택이 구현하기 힘듬",
       "* 원인 : web전용 사이트라고 하더라도 사용자의 화면 크기가 다름",
@@ -29,44 +45,48 @@
       "<strong> 퍼블리싱 오류 해결 과정</strong>",
       "* 오류 : 하단 프로모션 부분의 Kakao Api를 사용하여 사진을 불러오려고 했으나 되지 않음",
       "* 원인 : 개인 블로그 복사금지 되어있기 때문",
-      "* 해결 : 쇼핑 사이트의 주소 사용"],
-      "siteUrl":"https://legopfsite.netlify.app",
-      "gitUrl":"https://github.com/meteor-or/legoSite"
+      "* 해결 : 쇼핑 사이트의 주소 사용"
+    ],
+    "siteUrl": "https://legopfsite.netlify.app",
+    "gitUrl": "https://github.com/meteor-or/legoSite"
   },
   {
-    "title" :"타워필라테스",
-    "hashtag" : "#CSSanimation #반응형 #웹접근성 #웹표준 #시맨틱마크업 ",
-    "descOfContribution":"디자인 + 퍼블리싱 100%",
-    "descOfDetail":[
+    "title": "타워필라테스",
+    "hashtag": "#CSSanimation #반응형 #웹접근성 #웹표준 #시맨틱마크업 ",
+    "descOfContribution": "디자인 + 퍼블리싱 100%",
+    "descOfDetail": [
       "<strong>디자인</strong>",
       "* ‘독일식 발레핏 필라테스 전문센터' 특징을 고려한 파스텔 컬러",
       "* 부드러운 이미지라 굵고 투박한 선보단 얇은 선을 사용",
       "<strong>퍼블리싱</strong>",
       "* 바닐라 자바스크립트 : 스크롤 이벤트 + gnb 클릭 시 body가 밀리는 부분",
-      "* 나머지 애니메이션은 css로 구현"],
-    "descOfProcess":"",
-    "descOfReview":[
+      "* 나머지 애니메이션은 css로 구현"
+    ],
+    "descOfProcess": "",
+    "descOfReview": [
       "<strong>디자인</strong>",
       "* 구상 시 display : grid, flex를 사용하여 퍼블리싱 할 것 고려함",
       "* 실제로 퍼블리싱이 어렵지 않았음<br>",
       "<strong>퍼블리싱</strong>",
       "* 작업 당시 자바스크립트 학습중이라 미숙함",
       "* hamburger Menu 클릭 시 직선 변화 애니메이션 넣고 싶음",
-      "* input:checkbox 태그를 사용하여 순수 CSS animation로 구현"],
-      "siteUrl":"https://towerpilates.netlify.app",
-      "gitUrl":"https://github.com/meteor-or/pilatesSite"
-  }, 
+      "* input:checkbox 태그를 사용하여 순수 CSS animation로 구현"
+    ],
+    "siteUrl": "https://towerpilates.netlify.app",
+    "gitUrl": "https://github.com/meteor-or/pilatesSite"
+  },
   {
-    "title" :"잔고냉장고",
-    "hashtag" : "#UIUX디자인",
-    "descOfContribution":"디자인33%",
-    "descOfDetail":[
+    "title": "잔고냉장고",
+    "hashtag": "#UIUX디자인",
+    "descOfContribution": "디자인33%",
+    "descOfDetail": [
       "<strong>팀</strong>",
       "* 아무거나하조(이유성, 김민지, 원아름)",
       "<strong>앱 설명</strong>",
       "* 장보기 전 나의 절약 습관, 유통기한 관리 어플 '잔고 냉장고'",
-      "* 장 본 사진 한 장으로 모든 식재료를 등록하세요!"],
-    "descOfProcess":[
+      "* 장 본 사진 한 장으로 모든 식재료를 등록하세요!"
+    ],
+    "descOfProcess": [
       "<strong>1. 어플선정</strong>",
       "* 어플의 목적성은 좋으나 사용자 접근성이 아쉬운 어플 선택 ",
       "* 다른 경쟁 어플과 비교 후 개선 방안 구안",
@@ -86,7 +106,7 @@
       "* 메인 : 목표에 걸맞는 유통기한 확인 화면을 첫 페이지에 배치",
       "* 서브 : 재료 추가 화면, 사진 한 장으로 모두 등록가능"
     ],
-    "descOfReview":[
+    "descOfReview": [
       "<strong>담당업무</strong>",
       "* 노션을 이용하여 진행 사항을 꾸준히 정리",
       "* 자료 공동 조사 : <br>개선앱 및 유사앱, 디자인 참고 앱, 페르소나 기반 리서치, 무드보드, 디자인 가이드",
@@ -97,8 +117,9 @@
       "<strong>다음에 한다면 이렇게...</strong>",
       "* 초반에 시간을 투자해서 기준과 규칙을 정하고 시작하기",
       "* 최고의 결과가 나오지 않더라도 정한 기간 내에 마무리 짓기",
-      "* 중요한 문제가 아니라면 최대한 양보하여 빠르게 진행하기"],
-      "siteUrl":"https://xd.adobe.com/embed/d06051ae-2893-47a5-a743-022cb307a675-8533/",
-      "gitUrl":"https://brawny-gum-f58.notion.site/1d0a33255fbb4d95af4e38aaa1dfb076"
+      "* 중요한 문제가 아니라면 최대한 양보하여 빠르게 진행하기"
+    ],
+    "siteUrl": "https://xd.adobe.com/embed/d06051ae-2893-47a5-a743-022cb307a675-8533/",
+    "gitUrl": "https://brawny-gum-f58.notion.site/1d0a33255fbb4d95af4e38aaa1dfb076"
   }
 ]

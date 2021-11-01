@@ -59,38 +59,21 @@ $(".projectNav li").click(function () {
 $(".windowedMode").on("click", function () {
   $(".frame").toggleClass("fullmode");
   $(".projectPage .leftSection").toggleClass("displayNone");
+  if ($(".frame").hasClass("moblie__mode") === true) {
+    alert("모바일 모드를 해제하고 눌러주세요!");
+    $(".frame").removeClass("fullmode");
+    $(".projectPage .leftSection").removeClass("displayNone");
+  }
 });
 $(".mobileBtn").on("click", function () {
   $(".frame").toggleClass("moblie__mode");
-});
-// 돌아가는 텍스트"
-$.each($(".ezkorry-roller"), function (index, item) {
-  const wrapper = $("<div />", { class: "ezkorry-roller-wrapper" });
-  const roller = $(item);
-  roller.append(wrapper);
-  const span = roller.find("span").first();
-  wrapper.append(span);
-  const span_width = span.get(0).offsetWidth;
-  const max_width = roller.width() + span_width;
-  let inner_width = span_width;
-
-  while (max_width > inner_width) {
-    wrapper.append(span.clone());
-    inner_width += span_width;
+  if ($(".frame").hasClass("fullmode") === true) {
+    alert("전체화면 모드를 해제하고 눌러주세요!");
+    $(".frame").removeClass("moblie__mode");
   }
-
-  anime({
-    targets: wrapper.get(0),
-    translateX: {
-      value: "-=" + span_width + "px",
-      duration: 6000,
-    },
-    loop: true,
-    easing: "linear",
-  });
 });
 
-// // json으로 프로젝트 컨텐츠 넣기
+// json으로 프로젝트 컨텐츠 넣기
 $.ajax({
   url: "project.json",
   dataType: "json",
@@ -230,7 +213,12 @@ $(".git").on({
     $(".gitTxt").addClass("activeDesc");
   },
 });
-
+$(".react").on({
+  click: function () {
+    $(".descTxt").children().removeClass("activeDesc");
+    $(".reactTxt").addClass("activeDesc");
+  },
+});
 //타이핑
 
 const instance = new Typewriter(".taniScript", {

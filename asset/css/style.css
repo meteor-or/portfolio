@@ -38,7 +38,7 @@ a {
 }
 .ezkorry-roller {
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 /* nav */
 .gnb {
@@ -278,7 +278,6 @@ a {
   margin-bottom: 0;
 }
 .projectPage .headingContainer {
-  text-indent: 28px;
   letter-spacing: 0.05em;
 }
 .mainTitle {
