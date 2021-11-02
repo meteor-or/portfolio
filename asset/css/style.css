@@ -125,7 +125,7 @@ a {
 .leftSection {
   width: 50vw;
   height: 95vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   border-right: 2px solid #fff;
 }
 .rightSection {
@@ -279,6 +279,8 @@ a {
 }
 .projectPage .headingContainer {
   letter-spacing: 0.05em;
+  padding-left: 2rem;
+  background-color: #03c4a1;
 }
 .mainTitle {
   color: #03c4a1;
@@ -292,10 +294,9 @@ a {
   font-size: 22px;
 }
 .hashtag {
-  background-color: #03c4a1;
   font-weight: bold;
   padding: 28px 0;
-  font-size: 48px;
+  font-size: 2.2rem;
   width: 100%;
 }
 .projectInfo .desc {
@@ -322,12 +323,12 @@ a {
   flex-direction: column;
 }
 .contribution .desc {
-  text-indent: 28px;
+  text-indent: 1.12rem;
 }
 .projectInfo .infoItem .headingOfProject {
   font-family: "Noto Sans KR", sans-serif;
   padding: 5px 10px;
-  font-size: 36px;
+  font-size: 1.6rem;
   color: #fff;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
@@ -341,7 +342,7 @@ a {
   /* text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2); */
   padding: 5px 10px;
   margin-top: 72px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: rgba(0, 0, 0, 0.3);
   width: fit-content;
 }
