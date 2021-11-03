@@ -97,6 +97,7 @@ $.ajax({
     }
     if (descOfProcess !== "") {
       for (let j = 0; j <= descOfProcess.length - 1; j++) {
+        $(".process").css("display", "block");
         $(".descOfProcess ul").append("<li>" + descOfProcess[j] + "</li>");
       }
     } else {
@@ -143,10 +144,16 @@ for (let i = 0; i <= subNavlength; i++) {
             for (let j = 0; j <= descOfReview.length - 1; j++) {
               $(".descOfReview ul").append("<li>" + descOfReview[j] + "</li>");
             }
-            for (let j = 0; j <= descOfProcess.length - 1; j++) {
-              $(".descOfProcess ul").append(
-                "<li>" + descOfProcess[j] + "</li>"
-              );
+
+            if (descOfProcess !== "") {
+              for (let j = 0; j <= descOfProcess.length - 1; j++) {
+                $(".process").css("display", "block");
+                $(".descOfProcess ul").append(
+                  "<li>" + descOfProcess[j] + "</li>"
+                );
+              }
+            } else {
+              $(".process").css("display", "none");
             }
             $(".siteLink").attr({ href: siteUrl });
             $(".githubLink").attr({ href: gitUrl });
