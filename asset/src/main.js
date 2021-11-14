@@ -49,7 +49,7 @@ $(".projectNav li").click(function () {
 //오른쪽 프레임 명 변경
 $(".projectNav li").click(function () {
   let frameName = $(this).text();
-  $(".frameHeader h4").text(frameName);
+  $(".frameHeader .titleOfFrame").text(frameName);
 });
 
 // // activeProjectNav
