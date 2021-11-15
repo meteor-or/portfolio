@@ -119,8 +119,8 @@ a {
 /* main */
 
 .container {
-  width: 75%;
-  margin: 10% auto;
+  max-width: 720px;
+  margin: 60px auto;
 }
 .leftSection {
   width: 50vw;
@@ -143,6 +143,14 @@ a {
 .statusPage .leftSection {
   overflow: scroll;
 }
+.profileLink {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profileLink .notionLogo {
+  margin-right: 12px;
+}
 .nameTag {
   display: flex;
   text-align: left;
@@ -159,7 +167,6 @@ a {
 .nameTag img[alt="me"] {
   width: 30%;
 }
-
 .exp {
   font-family: "NeoDunggeunmo", sans-serif;
   margin-bottom: 10%;
@@ -221,7 +228,6 @@ a {
   align-items: center;
 }
 
-/* 테스트중 */
 .rightSection .frame {
   position: relative;
 }
@@ -251,7 +257,6 @@ a {
 img[alt="tani"] {
   height: 100px;
 }
-/* 여기까지 */
 
 .rightSection .me {
   font-family: "NeoDunggeunmo";
@@ -305,7 +310,7 @@ img[alt="tani"] {
   display: none;
 }
 .projectPage .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -316,15 +321,7 @@ img[alt="tani"] {
 .projectPage .headingContainer {
   letter-spacing: 0.05em;
   padding-left: 2rem;
-  background-color: #03c4a1;
-}
-.mainTitle {
-  color: #03c4a1;
-  -webkit-text-stroke: 1px #000;
-  text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.3);
-}
-.subTitle {
-  color: #03c4a1;
+  background-color: #2d3561;
 }
 .projectInfo {
   font-size: 22px;
@@ -341,14 +338,8 @@ img[alt="tani"] {
 .infoItem ul {
   margin: 0;
 }
-.descOfReview,
-.descOfDetail,
-.descOfProcess {
-  margin-bottom: 72px;
-  margin-left: 28px;
-}
-.descOfContribution {
-  margin: 72px 28px;
+.infoItemDesc {
+  margin: 72px 72px;
 }
 :is(.descOfReview, .descOfDetail, .descOfProcess) li {
   margin-bottom: 10px;
@@ -374,12 +365,10 @@ img[alt="tani"] {
 }
 .infoItem strong {
   display: block;
-  color: #03c4a1;
   /* text-shadow: 4px 4px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2); */
   padding: 5px 10px;
-  margin-top: 72px;
   font-size: 1.6rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #2d3561;
   width: fit-content;
 }
 .infoItem strong::before {
