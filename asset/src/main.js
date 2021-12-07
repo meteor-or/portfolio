@@ -45,9 +45,8 @@ $(".gnb li")
 $(".projectNav li").click(function () {
   $(this).siblings().removeClass("is-active");
   $(this).addClass("is-active");
-});
-//오른쪽 프레임 명 변경
-$(".projectNav li").click(function () {
+
+  //오른쪽 프레임 명 변경
   let frameName = $(this).text();
   $(".frameHeader .titleOfFrame").text(frameName);
 });
@@ -73,7 +72,7 @@ $(".mobileBtn").on("click", function () {
   }
 });
 
-// json으로 프로젝트 컨텐츠 넣기
+// json으로 첫번째 프로젝트 컨텐츠 넣기
 $.ajax({
   url: "project.json",
   dataType: "json",

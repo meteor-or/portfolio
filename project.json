@@ -1,7 +1,26 @@
 [
   {
+    "title": "채팅 앱",
+    "hashtag": "#작업중 #firebase #로그인/회원가입/유효성 #실시간데이터교환",
+    "descOfContribution": "개인 프로젝트 : 기획 + 디자인 + 구현 100%",
+    "descOfDetail": [
+      "<strong>기능</strong>",
+      "- 로그인/회원가입, 유효성 체크",
+      "- DM에 가입된 유저 실시간 반영, DM 메시지방",
+      "- 채팅방 생성, 설명 추가, 즐겨찾기 추가/삭제",
+      "- 메시지 알림 개수 표시",
+      "- 공개방에서 대화하기",
+      "- 상대방 대화 입력 시 알려주기",
+      "- 유저 이미지 교체, 이미지 메시지 보내기"
+    ],
+    "descOfProcess": "",
+    "descOfReview": ["아직 작업중"],
+    "siteUrl": "https://react-chattingapp.netlify.app/",
+    "gitUrl": "https://github.com/meteor-or/chattingapp"
+  },
+  {
     "title": "오늘 전장",
-    "hashtag": "#React #Bootstrap #SPA #데이터바인딩 #라이브러리",
+    "hashtag": "#실제사용자방문중 #React #Bootstrap #SPA #데이터바인딩 #라이브러리",
     "descOfContribution": "개인 프로젝트 : 기획 + 디자인 + 구현 100%",
     "descOfDetail": [
       "<strong>소개</strong>",

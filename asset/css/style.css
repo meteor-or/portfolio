@@ -15,13 +15,15 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
 
-.wrap {
+body {
   background: linear-gradient(#f3826f, #2d3561);
-  width: 100vw;
+}
+.wrap {
   height: 100vh;
   color: #fff;
   font-family: "roboto", "Noto Sans KR", "NeoDunggeunmo", sans-serif;
   overflow: hidden;
+  margin: 0 auto;
 }
 ul {
   margin: 0;
@@ -43,29 +45,23 @@ a {
 /* nav */
 .gnb {
   font-family: "NeoDunggeunmo", sans-serif;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 0;
-  height: 5vh;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
+
+  height: 5vh;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
 }
-.projectNav {
-}
 .gnb li {
   border-right: 1px solid #fff;
   width: 25%;
   text-align: center;
+}
+.gnb li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .gnb li a {
   color: #fff;
@@ -85,26 +81,17 @@ a {
 .projectNav {
   font-family: "NeoDunggeunmo", sans-serif;
   display: none;
-  list-style-type: none;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 0;
-  height: 2.8125rem;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
+  height: 2.8125rem;
   border-bottom: 2px solid #fff;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
-  display: none;
+  list-style: decimal;
 }
 .projectNavItem {
-  border-right: 2px solid #fff;
-}
-.projectNavItem {
-  width: 25%;
-  text-align: center;
+  width: 200px;
+  margin-left: 40px;
 }
 .projectNavItem a {
   color: #fff;
@@ -123,13 +110,13 @@ a {
   margin: 60px auto;
 }
 .leftSection {
-  width: 50vw;
+  width: 50%;
   height: 95vh;
   background-color: rgba(0, 0, 0, 0.8);
   border-right: 2px solid #fff;
 }
 .rightSection {
-  width: 50vw;
+  width: 50%;
   height: 95vh;
 }
 
